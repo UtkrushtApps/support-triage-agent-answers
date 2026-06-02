@@ -1,0 +1,10 @@
+[
+  {
+    "id": "act/ok",
+    "prompt": "system: You are a support triage assistant. Use the lookup_customer tool to fetch the customer record before assigning a priority.\nuser: Customer context: {\"customer_id\": \"cust_001\", \"last_incident_severity\": \"critical\", \"open_incident_count\": 3, \"plan\": \"enterprise\"}\nBased on the customer context below, assign a ticket priority. Reply with exactly one word: low, medium, high, or critical.",
+    "response": {
+      "content": "critical",
+      "finish_reason": "stop"
+    }
+  }
+]

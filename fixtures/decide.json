@@ -1,0 +1,30 @@
+[
+  {
+    "id": "decide/valid",
+    "prompt": "system: You are a support triage assistant. Use the lookup_customer tool to fetch the customer record before assigning a priority.\nuser: Look up customer cust_001 and assign a ticket priority.",
+    "response": {
+      "content": null,
+      "tool_calls": [
+        {
+          "name": "lookup_customer",
+          "arguments": {"customer_id": "cust_001"}
+        }
+      ],
+      "finish_reason": "tool_calls"
+    }
+  },
+  {
+    "id": "decide/timeout",
+    "prompt": "system: You are a support triage assistant. Use the lookup_customer tool to fetch the customer record before assigning a priority.\nuser: Look up customer cust_timeout and assign a ticket priority.",
+    "response": {
+      "content": null,
+      "tool_calls": [
+        {
+          "name": "lookup_customer",
+          "arguments": {"customer_id": "cust_timeout"}
+        }
+      ],
+      "finish_reason": "tool_calls"
+    }
+  }
+]
